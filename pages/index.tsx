@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { RoomConditionData } from './components/room_condition_data';
+import { RoomConditionData } from '../components/room_condition_data';
 
 export default function Home() {
   return (
