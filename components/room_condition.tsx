@@ -16,7 +16,7 @@ export const RoomCondition = (props: RoomConditionDataType) => {
         <Card>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              measured time
+              Measured time
             </Typography>
             <Typography variant="h5" component="h2">
               {props.measuring_time}
@@ -28,7 +28,7 @@ export const RoomCondition = (props: RoomConditionDataType) => {
         <Card>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              temperature
+              Temperature
             </Typography>
             <Typography variant="h5" component="h2">
               {props.temperature} [℃]
@@ -40,7 +40,7 @@ export const RoomCondition = (props: RoomConditionDataType) => {
         <Card>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              pressure
+              Pressure
             </Typography>
             <Typography variant="h5" component="h2">
               {props.pressure} [hPa]
@@ -52,7 +52,7 @@ export const RoomCondition = (props: RoomConditionDataType) => {
         <Card>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              humidity
+              Humidity
             </Typography>
             <Typography variant="h5" component="h2">
               {props.humidity} [%]
@@ -64,7 +64,7 @@ export const RoomCondition = (props: RoomConditionDataType) => {
         <Card>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              co2_concentration
+              CO2
             </Typography>
             <Typography variant="h5" component="h2">
               {props.co2_concentration} [ppm]
