@@ -1,10 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { RoomConditionDataType } from "./interfaces";
-import { Loader } from "./loader";
-import { RoomCondition } from "./room_condition";
+import { Loader } from "../components/loader";
+import { RoomConditionDataType } from "../interfaces/common";
 
-export const RoomConditionData = () => {
+export const FetchAirConditionData = (props) => {
   const [roomConditionData, setRoomConditionData] = useState<
     RoomConditionDataType
   >(null);
@@ -26,19 +25,15 @@ export const RoomConditionData = () => {
     fetchData();
   }, []);
 
-  if (roomConditionData) {
-    return (
-      <RoomCondition
-        measuring_time={roomConditionData.measuring_time}
-        temperature={roomConditionData.temperature}
-        pressure={roomConditionData.pressure}
-        humidity={roomConditionData.humidity}
-        co2_concentration={roomConditionData.co2_concentration}
-      />
-    );
+  if (!roomConditionData) {
+    return <Loader />;
   }
 
-  return (
-    <Loader />
-  );
+  return props.render({
+    measuring_time: roomConditionData.measuring_time,
+    temperature: roomConditionData.temperature,
+    pressure: roomConditionData.pressure,
+    humidity: roomConditionData.humidity,
+    co2_concentration: roomConditionData.co2_concentration,
+  });
 };

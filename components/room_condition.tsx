@@ -3,7 +3,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import React from "react";
-import { RoomConditionDataType } from "./interfaces";
+import { RoomConditionDataType } from "../interfaces/common";
 import styles from "./room_condition.module.scss";
 
 export const RoomCondition = (props: RoomConditionDataType) => {
