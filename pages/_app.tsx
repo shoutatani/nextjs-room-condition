@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <main className={abel.className}>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </main>
       <Analytics />
     </>
