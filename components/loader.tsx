@@ -3,9 +3,7 @@ import RichLoader from "react-loader-spinner";
 
 export const Loader = () => {
   return (
-    <div
-      className="loader center"
-    >
+    <div className="loader center">
       <RichLoader
         type="BallTriangle"
         color="#00BFFF"
@@ -17,7 +15,7 @@ export const Loader = () => {
           left: "50%",
           top: "50%",
           marginLeft: "-50px",
-          marginTop: "-50px"
+          marginTop: "-50px",
         }}
       />
     </div>

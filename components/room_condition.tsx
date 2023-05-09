@@ -10,7 +10,7 @@ export const RoomCondition = (props: RoomConditionDataType) => {
   return (
     <Grid container spacing={3}>
       <Grid className={styles.title} item xs={12}>
-        My room's air condition data
+        {"My room's air condition data"}
       </Grid>
       <Grid className={styles.item} item xs={12} sm={12}>
         <Card>

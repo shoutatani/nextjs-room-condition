@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Container>
       <Head>
-        <title>My room's air condition Data</title>
+        <title>{"My room's air condition Data"}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
@@ -35,10 +35,10 @@ export default function Home() {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
           rel="stylesheet"
-        ></link>
+        ></link> */}
       </Head>
       <FetchAirConditionData
         render={({

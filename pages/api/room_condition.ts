@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export default async (_req, res) => {
+export default async function GET(_req, res) {
   const data = await axios
     .get(process.env.API_URL, {
       headers: {
@@ -21,4 +21,4 @@ export default async (_req, res) => {
 
   res.statusCode = 200;
   res.json(data);
-};
+}
