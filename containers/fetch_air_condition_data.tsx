@@ -4,9 +4,8 @@ import { Loader } from "../components/loader";
 import { RoomConditionDataType } from "../interfaces/common";
 
 export const FetchAirConditionData = (props) => {
-  const [roomConditionData, setRoomConditionData] = useState<
-    RoomConditionDataType
-  >(null);
+  const [roomConditionData, setRoomConditionData] =
+    useState<RoomConditionDataType>(null);
 
   useEffect(() => {
     const fetchData = async () => {
