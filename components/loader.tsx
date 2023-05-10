@@ -1,15 +1,16 @@
+"use client";
+
 import React from "react";
-import RichLoader from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 
 export const Loader = () => {
   return (
     <div className="loader center">
-      <RichLoader
-        type="BallTriangle"
+      <ThreeDots
         color="#00BFFF"
         height={100}
         width={100}
-        style={{
+        wrapperStyle={{
           position: "absolute",
           display: "block",
           left: "50%",
